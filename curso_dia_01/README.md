@@ -26,6 +26,20 @@ ahora los vectores y las matrices ...
 %%%%%%%%%%%%%%%%%%%%%%%
 % vectores y matrices %
 %%%%%%%%%%%%%%%%%%%%%%%
+% ejemplo de vector columna
+[10; 20; 30; 10]
+
+% ejemplo de vector fila
+[10 20 30 10]
+[10,20,30,10]
+
+% ejemplo de matrices
+[10 20 30 40; 10 40 30 20; 10 10 10 20]
+
+% asignamos a una variable la columna/matriz para realizar operaciones
+a = [10; 20; 30; 10]
+b = [10 20 30 10]
+c = [10 20 30 40; 10 40 30 20; 10 10 10 20]
 
 ```
 

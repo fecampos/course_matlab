@@ -1,2 +1,8 @@
 # Cursillo: Computación científica en Matlab/Octave
-IV COLAMAT 2021 : Congreso Latinoamericano de Matemática
+IV COLAMAT 2021 : Congreso Latinoamericano de Matemática (16-17, Diciembre 2021)
+
+autor: Fernando Campos (fcampos@cicese.edu.mx)
+
+Enlace al día 01: [día 01](https://github.com/fecampos/course_matlab/tree/main/curso_dia_01)
+
+Enlace al día 02: [día 02](https://github.com/fecampos/course_matlab/tree/main/curso_dia_02)

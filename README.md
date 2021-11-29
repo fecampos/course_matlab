@@ -1,3 +1,6 @@
+![alt text](https://github.com/fecampos/course_matlab/blob/main/Screenshot%20from%202021-11-28%2022-23-14.png
+)
+
 # Cursillo: Computación científica en Matlab/Octave
 IV COLAMAT 2021 : Congreso Latinoamericano de Matemática (16-17, Diciembre 2021)
 

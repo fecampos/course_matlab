@@ -71,6 +71,47 @@ sin(a).*cos(b)'
 
 
 # 2) Conceptos básicos: lazos y condicionales
+comencemos con lazos (loops)...
+```MATLAB
+%%%%%%%%%%%%%%%%%%%%%%%
+%        loops        %
+%%%%%%%%%%%%%%%%%%%%%%%
+%for i=1:100
+%  statement 1
+%  statement 2
+%  .
+%  .
+%  .
+%end  
+
+% un ejemplo de un loop
+for i = 1:100
+  pi*i^2
+end  
+```
+continuemos con las condicionales...
+```MATLAB
+%%%%%%%%%%%%%%%%%%%%%%%
+%    conditionals     %
+%%%%%%%%%%%%%%%%%%%%%%%
+%if condition 1
+%  statement 
+%elseif condition 2
+%  statement
+%elseif condition 3 
+%  statement
+%else
+%  statement 
+%end  
+
+% un ejemplo de una condicional
+if sin(pi/2) == 1
+  display('estamos ok')
+else
+  display('tenemos errores')
+end  
+
+```
 
 # 3) Conceptos básicos: funciones
 

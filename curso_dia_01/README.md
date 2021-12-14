@@ -110,7 +110,22 @@ if sin(pi/2) == 1
 else
   display('tenemos errores')
 end  
+```
+ahora el ciclo while...
+```MATLAB
+%%%%%%%%%%%%%%%%%%%%%%%
+%   while condition   %
+%%%%%%%%%%%%%%%%%%%%%%%
+%while expression
+%  statement 
+%end
 
+% un ejemplo del uso de while
+i = 1
+while i ~= 15
+  display(['la iteracion numero: ' num2str(i)])
+  i = i+1;
+end  
 ```
 
 # 3) Conceptos básicos: funciones

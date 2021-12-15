@@ -16,6 +16,15 @@ pwd
 cd
 mkdir
 ```
+(*) run octave file by terminal linux
+1) create a file myfile.m 
+```SH
+#! /bin/octave -qf
+"hello world"
+```
+2) in terminal, write: chmod +x myfile.m
+3) finally, run: ./myfile.m
+
 
 # 1) Conceptos básicos: matrices y operadores
 comencemos ...

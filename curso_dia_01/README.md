@@ -14,6 +14,7 @@ octave-cli
 ls
 pwd
 cd
+mkdir
 ```
 
 # 1) Conceptos básicos: matrices y operadores

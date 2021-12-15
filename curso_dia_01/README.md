@@ -1,8 +1,19 @@
 # IV CONGRESO LATINOAMERICANO DE MATEMÁTICA - COLAMAT 2021
 # Cursillo: Computación científica en Matlab/Octave (día 01)
 
+# (*) instrucciones de acceso a Matlab y Octave por terminal (usuarios de Linux)
+
+```SH
+#matlab 
+matlab -nodesktop
+
+#Octave
+octave-cli
+```
+
 # 1) Conceptos básicos: matrices y operadores
 comencemos ...
+
 ```MATLAB
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % funciones básicas y operadores %
@@ -110,7 +121,20 @@ if sin(pi/2) == 1
 else
   display('tenemos errores')
 end  
+
+% empleamos lo sguiente en las condicionales:
+% == igual a 
+% ~= no es igual a 
+% <  menor que
+% <= menor igual a 
+% >  mayor que
+% >= mayor igual a
+
+% tambien podemos usar operaciones booleanas:
+% & -> and
+% | -> or
 ```
+
 ahora el ciclo while...
 ```MATLAB
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -129,5 +153,24 @@ end
 ```
 
 # 3) Conceptos básicos: funciones
+```MATLAB
+# ejemplo de funciones:
+a = rand(10)
+b = mean(a);
+c = std(a);
+
+% function [out1 out2 ...] = name_function(in1,in2,...)
+
+function [m,s] = stat2(x)
+    n = length(x);
+    m = avg(x,n);
+    s = sqrt(sum((x-m).^2/n));
+end
+
+function m = avg(x,n)
+    m = sum(x)/n;
+end
+
+```
 
 # 4) Conceptos básicos: parte práctica

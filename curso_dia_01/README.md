@@ -199,3 +199,4 @@ Ejemplos:
 2) Usando la función anterior (my_first_func.m) guarde los resultados en y<sub>1</sub> (&omega;<sub>1</sub> = 0.45 s, &omega;<sub>2</sub> = 0.32 s. A = 0.31 ) y y<sub>2</sub> donde (&omega;<sub>1</sub> = 0.25 s, &omega;<sub>2</sub> = 0.42 s. A = 0.32), luego calcule y<sub>1</sub>+y<sub>2</sub>, y<sub>1</sub>-y<sub>2</sub>, y<sub>1</sub>y<sub>2</sub> para finalmente plotear, puede usar subplot en conjunto con plot.
 3) del resultado anterior (y<sub>1</sub>+y<sub>2</sub>, y<sub>1</sub>-y<sub>2</sub>, y<sub>1</sub>y<sub>2</sub>) grafique solo los valores que se encuentran en el rango de -0.1 y 0.1.
 4) Como usaría el while para graficar en un determinaod intervalo de tiempo?
+5) puede emplear el function handle para los pasos 1,2,3 y 4?

@@ -75,7 +75,7 @@ a = [10; 20; 30; 10]
 b = [10 20 30 10]
 c = [10 20 30 40; 10 40 30 20; 10 10 10 20]
 
-% aplicar traspuiesta a la matriz o vector: '
+% aplicar transpuesta a la matriz o vector: '
 a = a'
 b = b'
 c = c'
@@ -216,5 +216,5 @@ Ejemplos:
 1) crear una función senoidal (my_first_func.m) donde deba ingresar 2 períodos &omega;<sub>1</sub> = 0.5 s y &omega;<sub>2</sub> = 0.36 s, el tiempo de análisis y la amplitud. (Para graficar, podemos usar el comando plot )
 2) Usando la función anterior (my_first_func.m) guarde los resultados en y<sub>1</sub> (&omega;<sub>1</sub> = 0.45 s, &omega;<sub>2</sub> = 0.32 s. A = 0.31 ) y y<sub>2</sub> donde (&omega;<sub>1</sub> = 0.25 s, &omega;<sub>2</sub> = 0.42 s. A = 0.32), luego calcule y<sub>1</sub>+y<sub>2</sub>, y<sub>1</sub>-y<sub>2</sub>, y<sub>1</sub>y<sub>2</sub> para finalmente plotear, puede usar subplot en conjunto con plot.
 3) del resultado anterior (y<sub>1</sub>+y<sub>2</sub>, y<sub>1</sub>-y<sub>2</sub>, y<sub>1</sub>y<sub>2</sub>) grafique solo los valores que se encuentran en el rango de -0.1 y 0.1.
-4) Como usaría el while para graficar en un determinaod intervalo de tiempo?
+4) Como usaría el while para graficar en un determinado intervalo de tiempo?
 5) puede emplear el function handle para los pasos 1,2,3 y 4?

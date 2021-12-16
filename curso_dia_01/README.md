@@ -24,7 +24,7 @@ pwd
 cd
 mkdir
 ```
-(*) run octave file by terminal linux
+# (***) run octave file by terminal linux
 1) create a file myfile.m 
 ```SH
 #! /bin/octave -qf
@@ -33,6 +33,8 @@ mkdir
 2) in terminal, write: chmod +x myfile.m
 3) finally, run: ./myfile.m
 
+# (****) octave in jupyter?
+[octave in jupyter](https://www.gatyagumilang.com/install-octave-kernel-in-jupyter/)
 
 # 1) Conceptos básicos: matrices y operadores
 comencemos ...

@@ -1,7 +1,15 @@
 # IV CONGRESO LATINOAMERICANO DE MATEMÁTICA - COLAMAT 2021
 # Cursillo: Computación científica en Matlab/Octave (día 01)
 
-# (*) instrucciones de acceso a Matlab y Octave por terminal (usuarios de Linux)
+# (*) instrucciones para usar el matlab online:
+
+[link to matlab online](https://www.mathworks.com/products/matlab-online.html)
+
+# (**) instrucciones para instalación de octave:
+
+[link to Octave installation](https://www.gnu.org/software/octave/index)
+ 
+# (**) instrucciones de acceso a Matlab y Octave por terminal (usuarios de Linux)
 
 ```SH
 #matlab 

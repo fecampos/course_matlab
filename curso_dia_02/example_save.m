@@ -6,7 +6,11 @@ t = 0:0.1:100;
 
 f = sin(t)+cos(t/3);
 
+[tt] = repmat(t,[10 1])
+
 save data.mat t f
+
+save('data.txt','tt','-ascii')
 
 hf = figure("paperunits","normalized","position",[100 100 800 300]);
 

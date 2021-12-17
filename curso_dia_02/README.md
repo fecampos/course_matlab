@@ -66,7 +66,7 @@ for j = 1:nx
   for i = 1:nt
     f(i,j) = cos(omega*t(i)-k*x(j));
     if f(i,j) >0.5 | f(i,j) <-0.5;
-      f(i,j) = sin(omega*t(i)-k*x(j));
+      f(i,j) = 1;
     end
   end
 end
@@ -75,11 +75,12 @@ toc
 tic
 [xx tt] = meshgrid(x,t);
 f = cos(omega*tt-k*xx);
-f(f>0.5 | f<0.5) = sin(omega*tt-k*xx);
+f(f>0.5 | f<-0.5) = 1;
 toc
 ```
 
 # 2) Recursividad
+
 
 # 3) Formatos netcdf
 

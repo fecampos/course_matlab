@@ -1,40 +1,82 @@
 # IV CONGRESO LATINOAMERICANO DE MATEMÁTICA - COLAMAT 2021
 # Cursillo: Computación científica en Matlab/Octave (día 02)
 
-# (*) instrucciones de acceso a Matlab y Octave por terminal (usuarios de Linux)
 
-```SH
-#matlab 
-matlab -nodesktop
-
-#Octave
-octave-cli
-
-#comandos de linux usados en Matlab/octave
-ls
-pwd
-cd
-mkdir
-```
-(*) run octave file by terminal linux
-1) create a file myfile.m 
-```SH
-#! /bin/octave -qf
-"hello world"
-```
-2) in terminal, write: chmod +x myfile.m
-3) finally, run: ./myfile.m
 
 # 1) Vectorización 
 Queremos realizar la siguiente operación: en dos dimensiones: f<sub>(x,t)</sub> = A cos(&omega;t-kx)
 
 a) mediante loops
 ```MATLAB
-
+k = 0.35;
+omega = 0.2;
+t = 0:200; nt = length(t);
+x = -50:50; nx = length(x);
+for j = 1:nx
+  for i = 1:nt
+    f(i,j) = cos(omega*t(i)-k*x(j));
+  end
+end  
 ```
 b) mediante vectorización
 ```MATLAB
+k = 0.35;
+omega = 0.2;
+t = 0:200; nt = length(t);
+x = -50:50; nx = length(x);
+[xx tt] = meshgrid(x,t);
+f = cos(omega*tt-k*xx);
+```
+midamos los tiempos con tic toc ...
+```MATLAB
+k = 0.35;
+omega = 0.2;
+t = 0:300; nt = length(t);
+x = -50:50; nx = length(x);
 
+f = zeros(nt,nx);
+g = zeros(nt,nx);
+
+tic
+for j = 1:nx
+  for i = 1:nt
+    f(i,j) = cos(omega*t(i)-k*x(j));
+  end
+end
+toc
+
+tic
+[xx tt] = meshgrid(x,t);
+f = cos(omega*tt-k*xx);
+toc
+```
+modificando una matriz con condiciones específicas:
+
+```MATLAB
+k = 0.35;
+omega = 0.2;
+t = 0:300; nt = length(t);
+x = -50:50; nx = length(x);
+
+f = zeros(nt,nx);
+g = zeros(nt,nx);
+
+tic
+for j = 1:nx
+  for i = 1:nt
+    f(i,j) = cos(omega*t(i)-k*x(j));
+    if f(i,j) >0.5 | f(i,j) <-0.5;
+      f(i,j) = sin(omega*t(i)-k*x(j));
+    end
+  end
+end
+toc
+
+tic
+[xx tt] = meshgrid(x,t);
+f = cos(omega*tt-k*xx);
+f(f>0.5 | f<0.5) = sin(omega*tt-k*xx);
+toc
 ```
 
 # 2) Recursividad
